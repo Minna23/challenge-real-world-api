@@ -1,10 +1,22 @@
 
 const weatherAPIURL = "https://api.openweathermap.org"
-const weatherAPIKey = "556d1e5bc879529384ffe0b885c752a7"
+const weatherAPIKey = ""
 let searchHistory = []
 let searchInput = $("#search-input");
 let searchForm = $("#search-form");
 let searchHistoryContainer = $("#history")
+
+function renderSearchHistory() {
+    searchHistoryContainer.html("")
+            for (let i=0; i<searchHistory.length; i++){
+            let btn = $("<button>");
+            btn.attr("type", "submit")
+            btn.addClass("btn btn-primary history-btn btn-history")
+            btn.attr("data-search", searchHistory[i])
+            btn.text(searchHistory[i])
+            searchHistoryContainer.append(btn)
+            }
+}
 
 
 function fetchCoordinates(search) {
@@ -18,16 +30,7 @@ function fetchCoordinates(search) {
         else {
             searchHistory.push(search);
             localStorage.setItem("search-history", JSON.stringify(searchHistory))
-            searchHistoryContainer.html("")
-            for (let i=0; i<searchHistory.length; i++){
-            let btn = $("<button>");
-            btn.attr("type", "button")
-            btn.addClass("history-btn btn-history")
-
-            btn.attr("data-search", searchHistory[i])
-            btn.text(searchHistory[i])
-            searchHistoryContainer.append(btn)
-            }
+            
         }
     })
 }

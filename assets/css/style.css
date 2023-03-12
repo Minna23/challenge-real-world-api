@@ -2,3 +2,19 @@ header {
     background-color: navy;
     margin: 10px;
 }
+
+.btn-primary {
+    margin: 10px;
+
+}
+
+aside {
+
+    width: 30%;
+    padding-right: 15px;
+    margin-right: 15px;
+    float: left;
+    
+      
+
+}
