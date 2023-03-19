@@ -1,6 +1,6 @@
 // to get the javaScript code I followed pretty much Drew's thinking and method presented at his speedrun
 const weatherAPIURL = "https://api.openweathermap.org"
-const weatherAPIKey = ""
+const weatherAPIKey = "556d1e5bc879529384ffe0b885c752a7"
 let searchHistory = []
 let searchInput = $("#search-input");
 let searchForm = $("#search-form");
