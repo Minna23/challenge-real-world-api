@@ -36,5 +36,7 @@ As a resource for my javaScript I followed Drew's speedrun.
 I used HTML, CSS and JavaScript to solve this challenge.
 
 Image of deployed application:
+![image](https://user-images.githubusercontent.com/21089692/226194951-4522a4ed-8487-4249-889a-a4e5783c4f76.png)
 
-Link to deployed application:
+
+Link to deployed application: https://minna23.github.io/challenge-real-world-api/
