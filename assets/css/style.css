@@ -1,20 +1,23 @@
-header {
-    background-color: navy;
-    margin: 10px;
+body {
+    background-color: azure;
 }
+
+.first-container {
+    text-align: center; 
+    color: white; 
+    background: linear-gradient(to right, navy, #c3faec, white);
+    height: 80px; 
+}
+
 
 .btn-primary {
     margin: 10px;
-
 }
 
-aside {
+h4 {
+    color: white;
+}
 
-    width: 30%;
-    padding-right: 15px;
-    margin-right: 15px;
-    float: left;
-    
-      
-
+h3 {
+    color: white;
 }
